@@ -1,0 +1,53 @@
+---
+- name: Update yum
+  yum:
+    name: '*'
+    state: latest
+
+- name: Install httpd
+  yum:
+    name: httpd
+    state: latest
+
+- name: Install php
+  yum:
+    name: php*
+    state: latest
+
+- name: Install mysql
+  yum:
+    name: mysql*
+    state: latest
+
+- name: Install MySQL PHP
+  yum:
+    name: php-mysql*
+    state: latest
+
+- name: Install python-dev
+  yum:
+    name: python-pip
+    state: latest
+
+- name: Install libmysql
+  yum:
+    name: libmysql*
+    state: latest
+
+- name: Install mysql-devel
+  yum:
+    name: mysql-devel
+    state: latest
+
+- name: Install gcc
+  yum:
+    name: gcc
+    state: latest
+
+- name: Mysql python
+  yum:
+    name: MySQL-python
+    state: latest
+
+- name: Install MySQL-Python
+  pip: name=MySQL-python

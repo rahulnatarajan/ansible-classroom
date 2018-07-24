@@ -1,0 +1,6 @@
+---
+- name: Configure WP
+  hosts: all
+  
+  roles:
+    - sed

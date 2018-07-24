@@ -1,0 +1,8 @@
+---
+- name: Mod ownership apache
+  file:
+    path: /var/www
+    owner: apache
+    group: apache
+    mode: u=rwX,g=rwX,o=rX
+    recurse: yes

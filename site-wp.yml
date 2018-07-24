@@ -1,0 +1,11 @@
+---
+- name: Configure WP
+  hosts: all
+
+  roles:
+    - yum
+    - httpd
+    - s3_copy
+    - mod_group
+    - mod_ownership
+    - httpd

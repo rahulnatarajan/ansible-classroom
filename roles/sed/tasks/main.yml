@@ -1,0 +1,30 @@
+---
+- name: Replace DB Username
+  replace:
+    path: /var/www/html/wordpress/wp-config.php
+    regexp: 'dbuser'
+    replace: "{{ db_user }}"
+
+- name: Replace DB Password
+  replace:
+    path: /var/www/html/wordpress/wp-config.php
+    regexp: 'dbpassword'
+    replace: "{{ db_password }}"
+
+- name: Replace DB Password
+  replace:
+    path: /var/www/html/wordpress/wp-config.php
+    regexp: 'localhost'
+    replace: "{{ db_host }}"
+
+- name: Replace DB Password
+  replace:
+    path: /var/www/html/wordpress/wp-config.php
+    regexp: 'dbname'
+    replace: "{{ db_name }}"
+
+- name: Replace httpd config
+  replace:
+    path: /etc/httpd/conf/httpd.conf
+    regexp: 'None'
+    replace: 'All'

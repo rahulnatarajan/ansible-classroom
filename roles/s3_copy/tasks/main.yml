@@ -1,0 +1,3 @@
+---
+- name: Get S3 Bucket Items
+  command: aws s3 cp s3://scbdemo/wordpress/ /var/www/html/wordpress/ --recursive 

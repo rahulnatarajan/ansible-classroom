@@ -1,0 +1,6 @@
+---
+- name: Modify group
+  user:
+    name: ec2-user
+    groups: apache
+    append: yes
